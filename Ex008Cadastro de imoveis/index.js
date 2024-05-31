@@ -12,11 +12,11 @@ do {
     case "1":
       const imovel = {}
     imovel.proprietario = prompt("Insira o nome do proprietario:")
-    imovel.quarto = prompt("Insira a quantidade de quartos:")
-    imovel.banheiro = prompt("inisira a quantidade de banheiros:")
+    imovel.quarto = parseFloat(prompt("Insira a quantidade de quartos:"))
+    imovel.banheiro = parseFloat(prompt("inisira a quantidade de banheiros:"))
     imovel.garagem = prompt("Ele possui garagem?") 
 
-    const confirmação = confirm(`Salvar este imovel?\n proprietario - ${imovel.proprietario} \n Quartos - ${imovel.quarto}\n Banheiros - ${imovel.banheiro} \n Possui garagem - ${imovel.garagem}`)
+    const confirmação = confirm(`Salvar este imovel?\n Proprietario - ${imovel.proprietario} \n Quartos - ${imovel.quarto}\n Banheiros - ${imovel.banheiro} \n Possui garagem - ${imovel.garagem}`)
   
     if(confirmação){
       imoveis.push(imovel)
@@ -27,8 +27,7 @@ do {
       break;
       case "2":
     for (let i = 0; i < imoveis.length; i++) {
-      alert(`
-        imovel ${i + 1}\n proprietario - ${imoveis[i].proprietario} \n Quartos - ${imoveis[i].quarto}\n Banheiros - ${imoveis[i].banheiro} \n Possui garagem - ${imoveis[i].garagem} `
+      alert(`Imovel ${i + 1}\n Proprietario - ${imoveis[i].proprietario} \n Quartos - ${imoveis[i].quarto}\n Banheiros - ${imoveis[i].banheiro} \n Possui garagem - ${imoveis[i].garagem} `
       )
       
     }
