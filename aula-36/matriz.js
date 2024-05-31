@@ -17,9 +17,9 @@ const matriz = [
   ["l2, c1", "l2, c2", "l2, c3", "l2, c4"],
   ["l3, c1", "l3, c2", "l3, c3", "l3, c4"],
 ]
-    // console.table(matriz)
-    // matriz[0].push("teste 1")
-    // console.table(matriz)
+    // console.table(matriz) <- mostra uma tabela em ordem dos arrys representados pela variavel
+    // matriz[0].push("teste 1") <- indica o array na posição 1 e adiciona a string "teste 1"
+    // console.table(matriz) 
  
     for(let i = 0; i < matriz.length; i++){
 
